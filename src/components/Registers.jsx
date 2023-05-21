@@ -1,24 +1,22 @@
 import {Component} from 'react';
 import {Link} from "react-router-dom";
-
+import imgh from "../assets/im2.png";
+import '../styles/Registers.css';
 class Registers extends Component {
     render() {
         return (
-            <>
+        <>
             
-                <div>
-                
-                    <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
-                        <div>
-                            <a href="/">
-                                <h3 className="text-4xl font-bold text-blue-900">
-                                    Logo
-                                </h3>
-                            </a>
-                        </div>
-                        <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg">
+            <div>
+                 
+                <div className=" h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
+                <img src={imgh} alt="imgh" className='imgre justify-center lg:float-left hidden md:block' />
+                        <div className="w-full px-6 py-4 mt-6 overflow-hidden sm:max-w-lg sm:rounded-lg">
+                            
                             <form>
+                            <h1 className="text-3xl text-center font-bold text-black" >{'S\'inscrire'}</h1>
                                 <div>
+                                
                                     <label
                                         htmlFor="name"
                                         className="block text-sm font-medium text-gray-700 undefined"
@@ -30,7 +28,7 @@ class Registers extends Component {
                                             type="text"
                                             name="name"
                                             placeholder="name"
-                                            className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded block w-full mt-1 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                            className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded block mt-1 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                         />
                                     </div>
                                 </div>
@@ -46,7 +44,7 @@ class Registers extends Component {
                                             type="email"
                                             name="email"
                                             placeholder="Email Address"
-                                            className=" text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                            className=" text-sm w-full px-4 py-2 border border-solid block mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                         />
                                     </div>
                                 </div>
@@ -62,7 +60,7 @@ class Registers extends Component {
                                             type="password"
                                             name="password"
                                             placeholder="Password"
-                                            className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                            className="text-sm px-4 py-2 border border-solid block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                         />
                                     </div>
                                 </div>
@@ -78,13 +76,13 @@ class Registers extends Component {
                                             type="password"
                                             name="password_confirmation"
                                             placeholder="password confirmation"
-                                            className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                            className="text-sm px-4 py-2 border border-solid block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                         />
                                     </div>
                                 </div>
                                 <a
                                     href="#"
-                                    className="text-xs text-purple-600 hover:underline"
+                                    className="text-xs text-red-600 hover:underline"
                                 >
                                     Forget Password?
                                 </a>
@@ -98,7 +96,7 @@ class Registers extends Component {
                                 Already have an account?{" "}
                                 <span>
                             <Link
-                                className="text-purple-600 hover:underline"
+                                className="text-blue-600 hover:underline"
                                 to= "/login"
                             >
                                 Log in
@@ -127,6 +125,7 @@ class Registers extends Component {
                                 </button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </>
