@@ -80,14 +80,8 @@ class Registers extends Component {
                                         />
                                     </div>
                                 </div>
-                                <a
-                                    href="#"
-                                    className="text-xs text-red-600 hover:underline"
-                                >
-                                    Forget Password?
-                                </a>
                                 <div className="flex items-center mt-4">
-                                    <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-purple-600">
+                                    <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-900">
                                         Register
                                     </button>
                                 </div>
